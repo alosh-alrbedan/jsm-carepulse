@@ -26,7 +26,7 @@ const AppointmentForm = ({userId, patientId, type, appointment, setOpen}:
     patientId: string;
     type:"create" | "cancel" | "schedule"
     appointment?:Appointment;
-    setOpen:(open:boolean) => void
+    setOpen?:(open:boolean) => void
   }) => {
   console.log({userId: userId, patientId: patientId});
   const [isLoading, setIsLoading] = useState(false);
